@@ -4,7 +4,6 @@ html {
   }
 
   body {
-    font-family: 'Nerko One', cursive;
     margin: 0;
   }
 
@@ -14,8 +13,14 @@ html {
       position: absolute;
       background-color:rgb(119, 240, 234);
       z-index : -1;
+      font-family: "Poppins", sans-serif;
   }
 
+  #chat{
+      width:100%;
+      height:100%;
+      background-color: #aad5ee;
+  }
   canvas.particles-js-canvas-el{
     position: absolute;
     top:0;
@@ -122,6 +127,32 @@ button:focus {
     margin-top: 40px
 }
 
+.btn-color-chat {
+    border-radius: 7px;
+    color: #000;
+    width:80%;
+    height: 30px;
+    margin:auto;
+    background-image: linear-gradient(to right, #e0d6d6, #c2c7ca);
+    padding: auto;
+    cursor: pointer;
+    border: none !important;
+    margin-bottom: 10px;
+}
+
+.chat-head{
+    font-weight: 1000;
+    font-size: large;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+.btn-color-chat:hover {
+    color: #000;
+    border: none;
+    background-image: linear-gradient(to right,#c2c7ca, #e0d6d6)
+}
+
 .btn-color:hover {
     color: #fff;
     border: none;
@@ -131,10 +162,6 @@ button:focus {
 .fab{
 padding-left: 5%;
 padding-right: 5%;
-}
-
-hr{
-width:10%;
 }
 
 a {
@@ -172,9 +199,8 @@ a:hover {
 
 @media screen and (max-width: 768px) {
     .container {
-        padding: 10px !important
+        padding: 10px !important;
     }
-
     .card2 {
         padding: 50px
     }
@@ -185,4 +211,71 @@ a:hover {
     }
 }
 
-  
+.header{
+    display: flex;
+    background: whitesmoke;
+    height: 70px;
+}  
+.containers{
+    display:flex;
+    padding: 10px;
+}
+.container1{
+    height:fit-content;
+    background-color: transparent;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.container2{
+    height:fit-content;
+    background-color:transparent;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.container3{
+    height:fit-content;
+    background-color:transparent;
+    margin: 10px;
+    margin-left: 35px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.tick-color{
+    color: rgb(31, 104, 31);
+    margin-right: 10px;
+}
+
+.tick-color-inner{
+    color: rgb(31, 104, 31);
+    margin-right: 3px;
+    margin-left:0px ;
+
+}
+
+.logo{
+    height: 30px;
+    width: 30px;
+    border-radius:50% ;
+}
+
+.card{
+    border-radius: 10px;
+    margin-bottom:20px;
+    background-color: white;
+}
+ul.no-bullets {
+    list-style-type: none;
+    margin: auto;
+    margin-left: 10%;
+    padding: auto;
+  }
+.no-bullets-inner {
+    list-style-type: none;
+    margin: auto;
+    padding: auto;   
+}
+.list-bold{
+    font-weight: bold;
+}
