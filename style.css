@@ -209,6 +209,14 @@ a:hover {
         margin-top: 50px !important;
         margin-bottom: 50px !important
     }
+    .container3{
+        margin: 5px;
+        border-radius: 15px;
+    }
+    .containers{
+        display:inline;
+        padding: 10px;
+    } 
 }
 
 .header{
